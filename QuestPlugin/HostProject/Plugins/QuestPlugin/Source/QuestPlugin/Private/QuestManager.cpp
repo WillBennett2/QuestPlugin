@@ -29,6 +29,10 @@ void AQuestManager::GiveQuest(FName questID)
 	{
 		AcceptQuest(questID);
 	}
+	else
+	{
+		CompleteQuest(questID);
+	}
 	
 }
 bool AQuestManager::CheckPlayerQuestList(FName questID)
